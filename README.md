@@ -1,7 +1,7 @@
 # ogre_1_12_1_osx
 This is a pre-built SDK of OGRE-1‐12-1 for OSX including Xcode based bootstrap template.
 
-![Screen Capture](docs/capture.png "Xcode screen shot"))
+![Screen Capture](docs/capture.png "Xcode screen shot")
 
 All the dependent libraries are built in Dependencies directories.
 All the necessary libraries are copied into Frameworks folder of app bundle.
