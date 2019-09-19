@@ -1,0 +1,36 @@
+.TH "zzip_fclose" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_fclose, zzip_close \-  end usage\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fIzzip_fclose\fR(ZZIP_FILE * fp)
+
+int
+\fIzzip_close\fR(ZZIP_FILE * fp)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_fclose\fP function closes the given ZZIP_FILE handle. 
+.sp
+ If the ZZIP_FILE wraps a normal stat'fd then it is just that int'fd that is being closed and the otherwise empty ZZIP_FILE gets freed.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <Tomi.Ollila@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

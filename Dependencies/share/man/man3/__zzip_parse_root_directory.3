@@ -1,0 +1,35 @@
+.TH "__zzip_parse_root_directory" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+__zzip_parse_root_directory \-  internal\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fI__zzip_parse_root_directory\fR(int fd,
+                            struct _disk_trailer *trailer,
+                            struct zzip_dir_hdr **hdr_return,
+                            zzip_plugin_io_t io,
+                            zzip_off_t filesize)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fI__zzip_parse_root_directory\fP function is used by \fIzzip_file_open\fP, it is usually called after \fI__zzip_find_disk_trailer\fP. It will parse the zip's central directory information and create a zziplib private directory table in memory.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <too@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

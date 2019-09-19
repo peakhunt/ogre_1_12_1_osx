@@ -1,0 +1,35 @@
+.TH "zzip_file_close" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_file_close \-  end usage\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fIzzip_file_close\fR(ZZIP_FILE * fp)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_file_close\fP function is the direct call of \fIzzip_close(fp)\fP. It will cleanup the inflate-portion of \fIzlib\fP and free the structure given. 
+.sp
+ it is called quite from the error-cleanup parts of the various \fI_open\fP functions. 
+.sp
+ the .refcount is decreased and if zero the fp->dir is closed just as well.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <Tomi.Ollila@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

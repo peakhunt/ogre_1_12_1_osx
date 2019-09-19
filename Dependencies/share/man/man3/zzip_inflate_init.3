@@ -1,0 +1,31 @@
+.TH "zzip_inflate_init" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_inflate_init \-  internal\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+static int
+\fIzzip_inflate_init\fR(ZZIP_FILE * fp, struct zzip_dir_hdr *hdr)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ call \fIinflateInit\fP and setup fp's iterator variables, used by lowlevel \fI_open\fP functions.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <Tomi.Ollila@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

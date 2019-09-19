@@ -1,0 +1,14 @@
+prefix=/Volumes/Nifty/ogre/Dependencies
+exec_prefix=/Volumes/Nifty/ogre/Dependencies
+libdir=/Volumes/Nifty/ogre/Dependencies/lib
+includedir=/Volumes/Nifty/ogre/Dependencies/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.1.17
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -lbz2 -L/opt/local/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2

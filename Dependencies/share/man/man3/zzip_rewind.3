@@ -1,0 +1,33 @@
+.TH "zzip_rewind" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_rewind \-  rewind\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fIzzip_rewind\fR(ZZIP_FILE * fp)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_rewind\fP function will rewind a real/zipped file. 
+.sp
+ It seeks to the beginning of this file's data in the zip, or the beginning of the file for a stat'fd.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <Tomi.Ollila@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

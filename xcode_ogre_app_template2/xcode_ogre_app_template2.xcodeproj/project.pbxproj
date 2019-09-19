@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A25314D233339BF00812976 /* libzzip-0.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253148233339BF00812976 /* libzzip-0.13.dylib */; };
+		5A25314E233339BF00812976 /* libpugixml-shared.1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253149233339BF00812976 /* libpugixml-shared.1.10.dylib */; };
+		5A25314F233339BF00812976 /* libz.1.2.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25314A233339BF00812976 /* libz.1.2.11.dylib */; };
+		5A253150233339BF00812976 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25314B233339BF00812976 /* libfreetype.6.dylib */; };
+		5A253151233339BF00812976 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25314C233339BF00812976 /* libSDL2-2.0.0.dylib */; };
+		5A25315C233339E600812976 /* libOgreMeshLodGenerator.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253152233339E500812976 /* libOgreMeshLodGenerator.1.12.1.dylib */; };
+		5A25315D233339E600812976 /* libOgreTerrain.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253153233339E500812976 /* libOgreTerrain.1.12.1.dylib */; };
+		5A25315E233339E600812976 /* libOgreOverlay.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253154233339E500812976 /* libOgreOverlay.1.12.1.dylib */; };
+		5A25315F233339E600812976 /* libOgreRTShaderSystem.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253155233339E500812976 /* libOgreRTShaderSystem.1.12.1.dylib */; };
+		5A253160233339E600812976 /* libOgrePaging.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253156233339E500812976 /* libOgrePaging.1.12.1.dylib */; };
+		5A253161233339E600812976 /* libOgreBites.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253157233339E500812976 /* libOgreBites.1.12.1.dylib */; };
+		5A253162233339E600812976 /* libOgreVolume.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253158233339E500812976 /* libOgreVolume.1.12.1.dylib */; };
+		5A253163233339E600812976 /* libOgreHLMS.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253159233339E600812976 /* libOgreHLMS.1.12.1.dylib */; };
+		5A253164233339E600812976 /* libOgreMain.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25315A233339E600812976 /* libOgreMain.1.12.1.dylib */; };
+		5A253165233339E600812976 /* libOgreProperty.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25315B233339E600812976 /* libOgreProperty.1.12.1.dylib */; };
+		5A25316F23333A0400812976 /* Codec_FreeImage.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316623333A0300812976 /* Codec_FreeImage.1.12.1.dylib */; };
+		5A25317023333A0400812976 /* Plugin_OctreeSceneManager.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316723333A0300812976 /* Plugin_OctreeSceneManager.1.12.1.dylib */; };
+		5A25317123333A0400812976 /* Plugin_PCZSceneManager.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316823333A0300812976 /* Plugin_PCZSceneManager.1.12.1.dylib */; };
+		5A25317223333A0400812976 /* RenderSystem_GL.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316923333A0300812976 /* RenderSystem_GL.1.12.1.dylib */; };
+		5A25317323333A0400812976 /* Codec_STBI.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316A23333A0300812976 /* Codec_STBI.1.12.1.dylib */; };
+		5A25317423333A0400812976 /* Plugin_ParticleFX.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316B23333A0300812976 /* Plugin_ParticleFX.1.12.1.dylib */; };
+		5A25317523333A0400812976 /* RenderSystem_GL3Plus.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316C23333A0400812976 /* RenderSystem_GL3Plus.1.12.1.dylib */; };
+		5A25317623333A0400812976 /* Plugin_OctreeZone.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316D23333A0400812976 /* Plugin_OctreeZone.1.12.1.dylib */; };
+		5A25317723333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25316E23333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib */; };
+		5A25317823333A1100812976 /* Codec_FreeImage.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316623333A0300812976 /* Codec_FreeImage.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317923333A1100812976 /* Codec_STBI.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316A23333A0300812976 /* Codec_STBI.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317A23333A1100812976 /* Plugin_BSPSceneManager.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316E23333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317B23333A1100812976 /* Plugin_OctreeSceneManager.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316723333A0300812976 /* Plugin_OctreeSceneManager.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317C23333A1100812976 /* Plugin_OctreeZone.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316D23333A0400812976 /* Plugin_OctreeZone.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317D23333A1100812976 /* Plugin_ParticleFX.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316B23333A0300812976 /* Plugin_ParticleFX.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317E23333A1100812976 /* Plugin_PCZSceneManager.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316823333A0300812976 /* Plugin_PCZSceneManager.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25317F23333A1100812976 /* RenderSystem_GL.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316923333A0300812976 /* RenderSystem_GL.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318023333A1100812976 /* RenderSystem_GL3Plus.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25316C23333A0400812976 /* RenderSystem_GL3Plus.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318123333A1100812976 /* libOgreBites.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253157233339E500812976 /* libOgreBites.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318223333A1100812976 /* libOgreHLMS.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253159233339E600812976 /* libOgreHLMS.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318323333A1100812976 /* libOgreMain.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25315A233339E600812976 /* libOgreMain.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318423333A1100812976 /* libOgreMeshLodGenerator.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253152233339E500812976 /* libOgreMeshLodGenerator.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318523333A1100812976 /* libOgreOverlay.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253154233339E500812976 /* libOgreOverlay.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318623333A1100812976 /* libOgrePaging.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253156233339E500812976 /* libOgrePaging.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318723333A1100812976 /* libOgreProperty.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25315B233339E600812976 /* libOgreProperty.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318823333A1100812976 /* libOgreRTShaderSystem.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253155233339E500812976 /* libOgreRTShaderSystem.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318923333A1100812976 /* libOgreTerrain.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253153233339E500812976 /* libOgreTerrain.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318A23333A1100812976 /* libOgreVolume.1.12.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253158233339E500812976 /* libOgreVolume.1.12.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318B23333A1100812976 /* libfreetype.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25314B233339BF00812976 /* libfreetype.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318C23333A1100812976 /* libpugixml-shared.1.10.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253149233339BF00812976 /* libpugixml-shared.1.10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318D23333A1100812976 /* libSDL2-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25314C233339BF00812976 /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318E23333A1100812976 /* libz.1.2.11.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A25314A233339BF00812976 /* libz.1.2.11.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A25318F23333A1100812976 /* libzzip-0.13.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A253148233339BF00812976 /* libzzip-0.13.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A5CDF76233300E600EDE963 /* resources.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CDF74233300E600EDE963 /* resources.cfg */; };
+		5A5CDF77233300E600EDE963 /* Media in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CDF75233300E600EDE963 /* Media */; };
+		5A5CDF9423330C7D00EDE963 /* xcode_ogre_app_template2.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CDF9323330C7D00EDE963 /* xcode_ogre_app_template2.entitlements */; };
+		5A5CDFA02333182B00EDE963 /* Bootstrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CDF9E2333182B00EDE963 /* Bootstrap.cpp */; };
+		5AE720832332FA4A004D9651 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720822332FA4A004D9651 /* Cocoa.framework */; };
+		5AE720852332FA50004D9651 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720842332FA50004D9651 /* IOKit.framework */; };
+		5AE720872332FA63004D9651 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720862332FA63004D9651 /* OpenGL.framework */; };
+		5AE720892332FA6B004D9651 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720882332FA6B004D9651 /* AGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A2531472333396200812976 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A25317823333A1100812976 /* Codec_FreeImage.1.12.1.dylib in CopyFiles */,
+				5A25317923333A1100812976 /* Codec_STBI.1.12.1.dylib in CopyFiles */,
+				5A25317A23333A1100812976 /* Plugin_BSPSceneManager.1.12.1.dylib in CopyFiles */,
+				5A25317B23333A1100812976 /* Plugin_OctreeSceneManager.1.12.1.dylib in CopyFiles */,
+				5A25317C23333A1100812976 /* Plugin_OctreeZone.1.12.1.dylib in CopyFiles */,
+				5A25317D23333A1100812976 /* Plugin_ParticleFX.1.12.1.dylib in CopyFiles */,
+				5A25317E23333A1100812976 /* Plugin_PCZSceneManager.1.12.1.dylib in CopyFiles */,
+				5A25317F23333A1100812976 /* RenderSystem_GL.1.12.1.dylib in CopyFiles */,
+				5A25318023333A1100812976 /* RenderSystem_GL3Plus.1.12.1.dylib in CopyFiles */,
+				5A25318123333A1100812976 /* libOgreBites.1.12.1.dylib in CopyFiles */,
+				5A25318223333A1100812976 /* libOgreHLMS.1.12.1.dylib in CopyFiles */,
+				5A25318323333A1100812976 /* libOgreMain.1.12.1.dylib in CopyFiles */,
+				5A25318423333A1100812976 /* libOgreMeshLodGenerator.1.12.1.dylib in CopyFiles */,
+				5A25318523333A1100812976 /* libOgreOverlay.1.12.1.dylib in CopyFiles */,
+				5A25318623333A1100812976 /* libOgrePaging.1.12.1.dylib in CopyFiles */,
+				5A25318723333A1100812976 /* libOgreProperty.1.12.1.dylib in CopyFiles */,
+				5A25318823333A1100812976 /* libOgreRTShaderSystem.1.12.1.dylib in CopyFiles */,
+				5A25318923333A1100812976 /* libOgreTerrain.1.12.1.dylib in CopyFiles */,
+				5A25318A23333A1100812976 /* libOgreVolume.1.12.1.dylib in CopyFiles */,
+				5A25318B23333A1100812976 /* libfreetype.6.dylib in CopyFiles */,
+				5A25318C23333A1100812976 /* libpugixml-shared.1.10.dylib in CopyFiles */,
+				5A25318D23333A1100812976 /* libSDL2-2.0.0.dylib in CopyFiles */,
+				5A25318E23333A1100812976 /* libz.1.2.11.dylib in CopyFiles */,
+				5A25318F23333A1100812976 /* libzzip-0.13.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A253148233339BF00812976 /* libzzip-0.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libzzip-0.13.dylib"; path = "../Dependencies/lib/libzzip-0.13.dylib"; sourceTree = "<group>"; };
+		5A253149233339BF00812976 /* libpugixml-shared.1.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpugixml-shared.1.10.dylib"; path = "../Dependencies/lib/libpugixml-shared.1.10.dylib"; sourceTree = "<group>"; };
+		5A25314A233339BF00812976 /* libz.1.2.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.11.dylib; path = ../Dependencies/lib/libz.1.2.11.dylib; sourceTree = "<group>"; };
+		5A25314B233339BF00812976 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../Dependencies/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
+		5A25314C233339BF00812976 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../Dependencies/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		5A253152233339E500812976 /* libOgreMeshLodGenerator.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreMeshLodGenerator.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreMeshLodGenerator.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253153233339E500812976 /* libOgreTerrain.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreTerrain.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreTerrain.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253154233339E500812976 /* libOgreOverlay.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreOverlay.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreOverlay.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253155233339E500812976 /* libOgreRTShaderSystem.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreRTShaderSystem.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreRTShaderSystem.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253156233339E500812976 /* libOgrePaging.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgrePaging.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgrePaging.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253157233339E500812976 /* libOgreBites.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreBites.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreBites.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253158233339E500812976 /* libOgreVolume.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreVolume.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreVolume.1.12.1.dylib; sourceTree = "<group>"; };
+		5A253159233339E600812976 /* libOgreHLMS.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreHLMS.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreHLMS.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25315A233339E600812976 /* libOgreMain.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreMain.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreMain.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25315B233339E600812976 /* libOgreProperty.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOgreProperty.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/libOgreProperty.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316623333A0300812976 /* Codec_FreeImage.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Codec_FreeImage.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Codec_FreeImage.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316723333A0300812976 /* Plugin_OctreeSceneManager.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Plugin_OctreeSceneManager.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Plugin_OctreeSceneManager.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316823333A0300812976 /* Plugin_PCZSceneManager.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Plugin_PCZSceneManager.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Plugin_PCZSceneManager.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316923333A0300812976 /* RenderSystem_GL.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = RenderSystem_GL.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/RenderSystem_GL.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316A23333A0300812976 /* Codec_STBI.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Codec_STBI.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Codec_STBI.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316B23333A0300812976 /* Plugin_ParticleFX.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Plugin_ParticleFX.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Plugin_ParticleFX.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316C23333A0400812976 /* RenderSystem_GL3Plus.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = RenderSystem_GL3Plus.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/RenderSystem_GL3Plus.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316D23333A0400812976 /* Plugin_OctreeZone.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Plugin_OctreeZone.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Plugin_OctreeZone.1.12.1.dylib; sourceTree = "<group>"; };
+		5A25316E23333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = Plugin_BSPSceneManager.1.12.1.dylib; path = ../ogre_sdk_1_12_1/lib/OGRE/Plugin_BSPSceneManager.1.12.1.dylib; sourceTree = "<group>"; };
+		5A5CDF74233300E600EDE963 /* resources.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = resources.cfg; sourceTree = "<group>"; };
+		5A5CDF75233300E600EDE963 /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Media; sourceTree = "<group>"; };
+		5A5CDF9323330C7D00EDE963 /* xcode_ogre_app_template2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xcode_ogre_app_template2.entitlements; sourceTree = "<group>"; };
+		5A5CDF9E2333182B00EDE963 /* Bootstrap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bootstrap.cpp; sourceTree = "<group>"; };
+		5AE720702332F954004D9651 /* xcode_ogre_app_template2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcode_ogre_app_template2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE7207A2332F955004D9651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE720822332FA4A004D9651 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5AE720842332FA50004D9651 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5AE720862332FA63004D9651 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		5AE720882332FA6B004D9651 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = System/Library/Frameworks/AGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AE7206D2332F954004D9651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A25316F23333A0400812976 /* Codec_FreeImage.1.12.1.dylib in Frameworks */,
+				5A25317023333A0400812976 /* Plugin_OctreeSceneManager.1.12.1.dylib in Frameworks */,
+				5A25317123333A0400812976 /* Plugin_PCZSceneManager.1.12.1.dylib in Frameworks */,
+				5A25317223333A0400812976 /* RenderSystem_GL.1.12.1.dylib in Frameworks */,
+				5A25317323333A0400812976 /* Codec_STBI.1.12.1.dylib in Frameworks */,
+				5A25317423333A0400812976 /* Plugin_ParticleFX.1.12.1.dylib in Frameworks */,
+				5A25317523333A0400812976 /* RenderSystem_GL3Plus.1.12.1.dylib in Frameworks */,
+				5A25317623333A0400812976 /* Plugin_OctreeZone.1.12.1.dylib in Frameworks */,
+				5A25317723333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib in Frameworks */,
+				5A25315C233339E600812976 /* libOgreMeshLodGenerator.1.12.1.dylib in Frameworks */,
+				5A25315D233339E600812976 /* libOgreTerrain.1.12.1.dylib in Frameworks */,
+				5A25315E233339E600812976 /* libOgreOverlay.1.12.1.dylib in Frameworks */,
+				5A25315F233339E600812976 /* libOgreRTShaderSystem.1.12.1.dylib in Frameworks */,
+				5A253160233339E600812976 /* libOgrePaging.1.12.1.dylib in Frameworks */,
+				5A253161233339E600812976 /* libOgreBites.1.12.1.dylib in Frameworks */,
+				5A253162233339E600812976 /* libOgreVolume.1.12.1.dylib in Frameworks */,
+				5A253163233339E600812976 /* libOgreHLMS.1.12.1.dylib in Frameworks */,
+				5A253164233339E600812976 /* libOgreMain.1.12.1.dylib in Frameworks */,
+				5A253165233339E600812976 /* libOgreProperty.1.12.1.dylib in Frameworks */,
+				5A25314D233339BF00812976 /* libzzip-0.13.dylib in Frameworks */,
+				5A25314E233339BF00812976 /* libpugixml-shared.1.10.dylib in Frameworks */,
+				5A25314F233339BF00812976 /* libz.1.2.11.dylib in Frameworks */,
+				5A253150233339BF00812976 /* libfreetype.6.dylib in Frameworks */,
+				5A253151233339BF00812976 /* libSDL2-2.0.0.dylib in Frameworks */,
+				5AE720892332FA6B004D9651 /* AGL.framework in Frameworks */,
+				5AE720872332FA63004D9651 /* OpenGL.framework in Frameworks */,
+				5AE720852332FA50004D9651 /* IOKit.framework in Frameworks */,
+				5AE720832332FA4A004D9651 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A5CDF6E2332FD2900EDE963 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5A5CDF9E2333182B00EDE963 /* Bootstrap.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5AE720672332F954004D9651 = {
+			isa = PBXGroup;
+			children = (
+				5A5CDF6E2332FD2900EDE963 /* src */,
+				5AE720722332F954004D9651 /* Resources */,
+				5AE720712332F954004D9651 /* Products */,
+				5AE720812332FA4A004D9651 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5AE720712332F954004D9651 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE720702332F954004D9651 /* xcode_ogre_app_template2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AE720722332F954004D9651 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A5CDF75233300E600EDE963 /* Media */,
+				5A5CDF74233300E600EDE963 /* resources.cfg */,
+				5AE7207A2332F955004D9651 /* Info.plist */,
+				5A5CDF9323330C7D00EDE963 /* xcode_ogre_app_template2.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AE720812332FA4A004D9651 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A25316623333A0300812976 /* Codec_FreeImage.1.12.1.dylib */,
+				5A25316A23333A0300812976 /* Codec_STBI.1.12.1.dylib */,
+				5A25316E23333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib */,
+				5A25316723333A0300812976 /* Plugin_OctreeSceneManager.1.12.1.dylib */,
+				5A25316D23333A0400812976 /* Plugin_OctreeZone.1.12.1.dylib */,
+				5A25316B23333A0300812976 /* Plugin_ParticleFX.1.12.1.dylib */,
+				5A25316823333A0300812976 /* Plugin_PCZSceneManager.1.12.1.dylib */,
+				5A25316923333A0300812976 /* RenderSystem_GL.1.12.1.dylib */,
+				5A25316C23333A0400812976 /* RenderSystem_GL3Plus.1.12.1.dylib */,
+				5A253157233339E500812976 /* libOgreBites.1.12.1.dylib */,
+				5A253159233339E600812976 /* libOgreHLMS.1.12.1.dylib */,
+				5A25315A233339E600812976 /* libOgreMain.1.12.1.dylib */,
+				5A253152233339E500812976 /* libOgreMeshLodGenerator.1.12.1.dylib */,
+				5A253154233339E500812976 /* libOgreOverlay.1.12.1.dylib */,
+				5A253156233339E500812976 /* libOgrePaging.1.12.1.dylib */,
+				5A25315B233339E600812976 /* libOgreProperty.1.12.1.dylib */,
+				5A253155233339E500812976 /* libOgreRTShaderSystem.1.12.1.dylib */,
+				5A253153233339E500812976 /* libOgreTerrain.1.12.1.dylib */,
+				5A253158233339E500812976 /* libOgreVolume.1.12.1.dylib */,
+				5A25314B233339BF00812976 /* libfreetype.6.dylib */,
+				5A253149233339BF00812976 /* libpugixml-shared.1.10.dylib */,
+				5A25314C233339BF00812976 /* libSDL2-2.0.0.dylib */,
+				5A25314A233339BF00812976 /* libz.1.2.11.dylib */,
+				5A253148233339BF00812976 /* libzzip-0.13.dylib */,
+				5AE720882332FA6B004D9651 /* AGL.framework */,
+				5AE720862332FA63004D9651 /* OpenGL.framework */,
+				5AE720842332FA50004D9651 /* IOKit.framework */,
+				5AE720822332FA4A004D9651 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AE7206F2332F954004D9651 /* xcode_ogre_app_template2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE7207E2332F955004D9651 /* Build configuration list for PBXNativeTarget "xcode_ogre_app_template2" */;
+			buildPhases = (
+				5AE7206C2332F954004D9651 /* Sources */,
+				5AE7206D2332F954004D9651 /* Frameworks */,
+				5AE7206E2332F954004D9651 /* Resources */,
+				5A2531472333396200812976 /* CopyFiles */,
+				5A5CDFA423331B0F00EDE963 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xcode_ogre_app_template2;
+			productName = xcode_ogre_app_template2;
+			productReference = 5AE720702332F954004D9651 /* xcode_ogre_app_template2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AE720682332F954004D9651 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = KongjaStudio;
+				TargetAttributes = {
+					5AE7206F2332F954004D9651 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5AE7206B2332F954004D9651 /* Build configuration list for PBXProject "xcode_ogre_app_template2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE720672332F954004D9651;
+			productRefGroup = 5AE720712332F954004D9651 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AE7206F2332F954004D9651 /* xcode_ogre_app_template2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AE7206E2332F954004D9651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5CDF9423330C7D00EDE963 /* xcode_ogre_app_template2.entitlements in Resources */,
+				5A5CDF76233300E600EDE963 /* resources.cfg in Resources */,
+				5A5CDF77233300E600EDE963 /* Media in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A5CDFA423331B0F00EDE963 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho \" - - - - - - - - - - Running install script - - - - - - - - - -\"\necho \" Build Product Dir: ${BUILT_PRODUCTS_DIR}\"\necho \" Frameworks Dir: ${FRAMEWORKS_FOLDER_PATH}\"\n\nF_DIR=${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\necho \" Entering Frameworks Dir: ${F_DIR}\"\ncd ${F_DIR}\n\nln -s RenderSystem_GL.1.12.1.dylib RenderSystem_GL.dylib\nln -s RenderSystem_GL3Plus.1.12.1.dylib RenderSystem_GL3Plus.dylib\nln -s Plugin_ParticleFX.1.12.1.dylib Plugin_ParticleFX.dylib\nln -s Plugin_BSPSceneManager.1.12.1.dylib Plugin_BSPSceneManager.dylib\nln -s Plugin_OctreeSceneManager.1.12.1.dylib Plugin_OctreeSceneManager.dylib\nln -s Plugin_OctreeZone.1.12.1.dylib Plugin_OctreeZone.dylib\nln -s Plugin_PCZSceneManager.1.12.1.dylib Plugin_PCZSceneManager.dylib\nln -s Codec_STBI.1.12.1.dylib Codec_STBI.dylib\nln -s Codec_FreeImage.1.12.1.dylib Codec_FreeImage.dylib\nln -s libpugixml-shared.1.10.dylib libpugixml-shared.1.dylib\n \necho \" - - - - - - - - - - Done Running install script - - - - - - - - - -\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AE7206C2332F954004D9651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5CDFA02333182B00EDE963 /* Bootstrap.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5AE7207C2332F955004D9651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRE3D_SDK_PATH)/include/OGRE",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/freetype2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/SDL2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(OGRE3D_SDK_PATH)/lib/OGRE",
+					"$(OGRE3D_SDK_PATH)/lib",
+					"$(OGRE3D_DEPENDENCY_PATH)/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OGRE3D_DEPENDENCY_PATH = /Volumes/Nifty/ogre/Dependencies;
+				OGRE3D_SDK_PATH = /Volumes/Nifty/ogre/osx_build/sdk;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		5AE7207D2332F955004D9651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRE3D_SDK_PATH)/include/OGRE",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/freetype2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/SDL2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(OGRE3D_SDK_PATH)/lib/OGRE",
+					"$(OGRE3D_SDK_PATH)/lib",
+					"$(OGRE3D_DEPENDENCY_PATH)/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OGRE3D_DEPENDENCY_PATH = /Volumes/Nifty/ogre/Dependencies;
+				OGRE3D_SDK_PATH = /Volumes/Nifty/ogre/osx_build/sdk;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		5AE7207F2332F955004D9651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_ENTITLEMENTS = Resources/xcode_ogre_app_template2.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U5WSWSJ8FN;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRE3D_SDK_PATH)/include/OGRE/**",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/freetype2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/SDL2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include",
+				);
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OGRE3D_DEPENDENCY_PATH = ../Dependencies;
+				OGRE3D_SDK_PATH = ../ogre_sdk_1_12_1;
+				OTHER_LDFLAGS = "${OGRE3D_DEPENDENCY_PATH}/lib/libfreeimage.a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kongjastudio.xcode-ogre-app-template2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AE720802332F955004D9651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_ENTITLEMENTS = Resources/xcode_ogre_app_template2.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U5WSWSJ8FN;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRE3D_SDK_PATH)/include/OGRE/**",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/freetype2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include/SDL2",
+					"$(OGRE3D_DEPENDENCY_PATH)/include",
+				);
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OGRE3D_DEPENDENCY_PATH = ../Dependencies;
+				OGRE3D_SDK_PATH = ../ogre_sdk_1_12_1;
+				OTHER_LDFLAGS = "${OGRE3D_DEPENDENCY_PATH}/lib/libfreeimage.a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kongjastudio.xcode-ogre-app-template2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AE7206B2332F954004D9651 /* Build configuration list for PBXProject "xcode_ogre_app_template2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE7207C2332F955004D9651 /* Debug */,
+				5AE7207D2332F955004D9651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE7207E2332F955004D9651 /* Build configuration list for PBXNativeTarget "xcode_ogre_app_template2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE7207F2332F955004D9651 /* Debug */,
+				5AE720802332F955004D9651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AE720682332F954004D9651 /* Project object */;
+}

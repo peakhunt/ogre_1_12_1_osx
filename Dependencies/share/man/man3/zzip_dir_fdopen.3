@@ -1,0 +1,39 @@
+.TH "zzip_dir_fdopen" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_dir_fdopen, zzip_dir_fdopen_ext_io \-  fd reopen\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+ZZIP_DIR *
+\fIzzip_dir_fdopen\fR(int fd, zzip_error_t * errcode_p)
+
+ZZIP_DIR *
+\fIzzip_dir_fdopen_ext_io\fR(int fd, zzip_error_t * errcode_p,
+                       zzip_strings_t * ext, const zzip_plugin_io_t io)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_dir_fdopen\fP function is used by the \fIzzip_dir_open\fP and zzip_opendir(2) call. Opens the zip-archive as specified with the fd which points to an already openend file. The \fIzzip_dir_fdopen\fP function then search and parse the zip's central directory. 
+.sp
+ NOTE: refcount is zero, so an _open/_close pair will also delete this _dirhandle  
+.sp
+ the \fIzzip_dir_fdopen_ext_io\fP function uses explicit ext and io instead of the internal defaults, setting these to zero is equivalent to \fIzzip_dir_fdopen\fP  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <too@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

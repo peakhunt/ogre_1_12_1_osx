@@ -1,0 +1,38 @@
+.TH "zzip_dir_free" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_dir_free \- 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fIzzip_dir_free\fR(ZZIP_DIR * dir)
+
+int
+\fIzzip_dir_close\fR(ZZIP_DIR * dir)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_dir_free\fP function will free the zzip_dir handle unless there are still zzip_files attached (that may use its cache buffer). This is the inverse of \fIzzip_dir_alloc\fP , and both are helper functions used implicitly in other zzipcalls e.g. \fIzzip_dir_close\fP = zzip_close 
+.sp
+ returns zero on success returns the refcount when files are attached.  
+.sp
+ It will also \fIfree(2)\fP the \fIZZIP_DIR-handle\fP given. the counterpart for \fIzzip_dir_open\fP see also \fIzzip_dir_free\fP  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <too@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

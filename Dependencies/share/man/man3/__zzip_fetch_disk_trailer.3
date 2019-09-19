@@ -1,0 +1,33 @@
+.TH "__zzip_fetch_disk_trailer" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+__zzip_fetch_disk_trailer \-  internal\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fI__zzip_fetch_disk_trailer\fR(int fd, zzip_off_t filesize,
+                          struct _disk_trailer *_zzip_restrict trailer,
+                          zzip_plugin_io_t io)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fI__zzip_fetch_disk_trailer\fP function is used by \fIzzip_file_open\fP. It tries to find the zip's central directory info that is usually a few bytes off the end of the file.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <too@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

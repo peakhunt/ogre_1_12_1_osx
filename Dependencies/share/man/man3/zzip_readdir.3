@@ -1,0 +1,33 @@
+.TH "zzip_readdir" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_readdir \-  read dir\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+ZZIP_DIRENT *
+\fIzzip_readdir\fR(ZZIP_DIR * dir)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_readdir\fP function is the equivalent of a \fIreaddir(2)\fP for a realdir or a zipfile referenced by the ZZIP_DIR returned from \fIzzip_opendir\fP. 
+.sp
+ The ZZIP_DIR handle (as returned by \fIzzip_opendir)\fP contains a few more entries than being copied into the ZZIP_DIRENT. The only valid fields in a ZZIP_DIRENT are d_name (the file name), d_compr (compression), d_csize (compressed size), st_size (uncompressed size).  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

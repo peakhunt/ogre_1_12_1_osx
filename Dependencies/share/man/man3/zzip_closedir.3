@@ -1,0 +1,33 @@
+.TH "zzip_closedir" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_closedir \-  stop usage\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fIzzip_closedir\fR(ZZIP_DIR * dir)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_closedir\fP function is the equivalent of \fIclosedir(3)\fP for a realdir or zipfile. 
+.sp
+ The \fIzzip_closedir\fP function is magic - if the given arg-ZZIP_DIR is a real directory, it will call the real \fIclosedir(3)\fP and then free the wrapping ZZIP_DIR structure. Otherwise it will divert to \fIzzip_dir_close\fP which will free the ZZIP_DIR structure.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

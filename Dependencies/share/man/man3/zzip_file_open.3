@@ -1,0 +1,35 @@
+.TH "zzip_file_open" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_file_open \-  start usage\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+ZZIP_FILE *
+\fIzzip_file_open\fR(ZZIP_DIR * dir, zzip_char_t * name, int o_mode)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_file_open\fP function opens an \fIZZIP_FILE\fP from an already open \fIZZIP_DIR\fP handle. Since we have a chance to reuse a cached \fIbuf32k\fP and \fIZZIP_FILE\fP memchunk this is the best choice to unpack multiple files. 
+.sp
+ Note: the zlib supports 2..15 bit windowsize, hence we provide a 32k memchunk here... just to be safe. 
+.sp
+ On error it returns null and sets errcode in the ZZIP_DIR.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <Tomi.Ollila@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

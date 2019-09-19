@@ -1,0 +1,10 @@
+prefix=/Volumes/Nifty/ogre/Dependencies
+libdir=/Volumes/Nifty/ogre/Dependencies/lib
+includedir=/Volumes/Nifty/ogre/Dependencies/include
+ 
+Name: zzipwrap
+Version: 0.13.69
+Description: Callback Wrappers for ZZipLib
+Requires: zziplib
+Libs: -L${libdir} -lzzipwrap
+Cflags: -I${includedir}

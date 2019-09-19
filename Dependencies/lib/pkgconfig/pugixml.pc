@@ -1,0 +1,11 @@
+prefix=/Volumes/Nifty/ogre/Dependencies
+exec_prefix=${prefix}
+includedir=/Volumes/Nifty/ogre/Dependencies/include
+libdir=/Volumes/Nifty/ogre/Dependencies/lib
+
+Name: pugixml
+Description: Light-weight, simple and fast XML parser for C++ with XPath support.
+URL: https://pugixml.org/
+Version: 1.10
+Cflags: -I${includedir}
+Libs: -L${libdir} -lpugixml

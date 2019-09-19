@@ -1,0 +1,12 @@
+prefix=/Volumes/Nifty/ogre/osx_build/sdk
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+plugindir=${libdir}/OGRE
+
+Name: OGRE
+Description: Object-Oriented Graphics Rendering Engine
+Version: 1.12.1
+URL: http://www.ogre3d.org
+Libs: -L${libdir} -lOgreMain  -lpthread
+Cflags: -I${includedir} -I${includedir}/OGRE -I${includedir}/OGRE/OSX -pthread

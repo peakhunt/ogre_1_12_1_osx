@@ -1,0 +1,34 @@
+.TH "__zzip_try_open" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+__zzip_try_open \-  internal\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+int
+\fI__zzip_try_open\fR(zzip_char_t * filename, int filemode,
+                zzip_strings_t * ext, zzip_plugin_io_t io)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fI__zzip_try_open\fP function will attach any of the .zip extensions then trying to open it the with \fIopen(2)\fP. This is a helper function for \fIzzip_dir_open\fP, \fIzzip_opendir\fP and \fIzzip_open\fP. 
+.sp
+ The \fI__zzip_try_open\fP function returns a new system file handle or -1 on error. On error the \fI__zzip_try_open\fP function leaves the errno(3) of the underlying open(2) call on the last file.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <too@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp

@@ -1,0 +1,37 @@
+.TH "zzip_file_read" "3" "0\&.13\&.69" "zziplib" "zziplib Function List"
+.ie \n(.g .ds Aq \(aq
+.el        .ds Aq 
+.nh
+.ad l
+.SH "NAME"
+zzip_file_read \-  read data\&. 
+.SH "SYNOPSIS"
+.sp
+.nf
+.B "#include <zzip/lib\&.h>"
+.B ""
+.sp
+zzip_ssize_t
+\fIzzip_file_read\fR(ZZIP_FILE * fp, void *buf, zzip_size_t len)
+
+
+.fi
+.sp
+.SH "DESCRIPTION"
+ The \fIzzip_file_read\fP function reads data from zip-contained file. 
+.sp
+ This fuction works like \fIread(2)\fP and will fill the given buffer with bytes from the opened file. It will return the number of bytes read, so if the \fIEOF\fP is encountered you will be prompted with the number of bytes actually read. 
+.sp
+ This is the routines that needs the \fIbuf32k\fP buffer, and it would have need for much more polishing but it does already work quite well. 
+.sp
+ Note: the 32K buffer is rather big. The original inflate-algorithm required just that but the latest zlib would work just fine with a smaller buffer.  
+.sp
+.sp
+.SH "AUTHOR"
+ Guido Draheim <guidod@gmx.de> Tomi Ollila <Tomi.Ollila@iki.fi> 
+.sp
+.sp
+.SH "COPYRIGHT"
+ Copyright (c) Guido Draheim, use under copyleft (LGPL,MPL)  
+.sp
+.sp
