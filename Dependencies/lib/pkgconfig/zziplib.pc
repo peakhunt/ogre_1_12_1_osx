@@ -14,5 +14,5 @@ Name: zziplib
 Description: ZZipLib - libZ-based ZIP-access Library with an Easy-to-Use API
 Version: 0.13.69
 Requires: zzip-zlib-config
-Libs: -L${libdir}  -lzzip
-Cflags: -I${includedir} 
+Libs: -L${libdir} -L/Volumes/Nifty/ogre/Dependencies/lib -lzzip
+Cflags: -I${includedir} -I/Volumes/Nifty/ogre/Dependencies/include

@@ -1,5 +1,5 @@
-zlib_libs= -lz
-zlib_cflags=
+zlib_libs=-L/Volumes/Nifty/ogre/Dependencies/lib -lz
+zlib_cflags=-I/Volumes/Nifty/ogre/Dependencies/include
  
 Name: zzip-zlib-config
 Version: 1.2.11

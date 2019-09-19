@@ -14,5 +14,5 @@ Name: zzipfseeko
 Description: ZZipLib - libZ-based ZIP-access Library with an Easy-to-Use API
 Version: 0.13.69
 Requires: zzip-zlib-config
-Libs: -L${libdir}  -lzzipfseeko
-Cflags: -I${includedir} 
+Libs: -L${libdir} -L/Volumes/Nifty/ogre/Dependencies/lib -lzzipfseeko
+Cflags: -I${includedir} -I/Volumes/Nifty/ogre/Dependencies/include
