@@ -9,5 +9,6 @@ Just clone this repo and build with Xcode.
 
 Enjoy and just let me know if there is any build issue.
 
-By the way, I'm using Macbook Pro with macOS 10.14.6 and Xcode 10.3
+By the way, I'm using Macbook Pro with macOS 10.14.6 and Xcode 10.3.
+
 Maybe much better way is to create an SDK/Dependency build shell script but I'm satisfied enough now to be able to explore Ogre3D.
