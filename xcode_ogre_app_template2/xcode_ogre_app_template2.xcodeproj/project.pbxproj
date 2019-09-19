@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A02FC752333490000830888 /* libfreeimage-3.18.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A02FC742333490000830888 /* libfreeimage-3.18.0.dylib */; };
+		5A02FC762333490B00830888 /* libfreeimage-3.18.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A02FC742333490000830888 /* libfreeimage-3.18.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5A02FC782333498D00830888 /* plugins.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 5A02FC772333498D00830888 /* plugins.cfg */; };
 		5A25314D233339BF00812976 /* libzzip-0.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253148233339BF00812976 /* libzzip-0.13.dylib */; };
 		5A25314E233339BF00812976 /* libpugixml-shared.1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A253149233339BF00812976 /* libpugixml-shared.1.10.dylib */; };
 		5A25314F233339BF00812976 /* libz.1.2.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A25314A233339BF00812976 /* libz.1.2.11.dylib */; };
@@ -72,6 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5A02FC762333490B00830888 /* libfreeimage-3.18.0.dylib in CopyFiles */,
 				5A25317823333A1100812976 /* Codec_FreeImage.1.12.1.dylib in CopyFiles */,
 				5A25317923333A1100812976 /* Codec_STBI.1.12.1.dylib in CopyFiles */,
 				5A25317A23333A1100812976 /* Plugin_BSPSceneManager.1.12.1.dylib in CopyFiles */,
@@ -102,6 +106,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A02FC742333490000830888 /* libfreeimage-3.18.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfreeimage-3.18.0.dylib"; path = "../Dependencies/lib/libfreeimage-3.18.0.dylib"; sourceTree = "<group>"; };
+		5A02FC772333498D00830888 /* plugins.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugins.cfg; sourceTree = "<group>"; };
 		5A253148233339BF00812976 /* libzzip-0.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libzzip-0.13.dylib"; path = "../Dependencies/lib/libzzip-0.13.dylib"; sourceTree = "<group>"; };
 		5A253149233339BF00812976 /* libpugixml-shared.1.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpugixml-shared.1.10.dylib"; path = "../Dependencies/lib/libpugixml-shared.1.10.dylib"; sourceTree = "<group>"; };
 		5A25314A233339BF00812976 /* libz.1.2.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.11.dylib; path = ../Dependencies/lib/libz.1.2.11.dylib; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A02FC752333490000830888 /* libfreeimage-3.18.0.dylib in Frameworks */,
 				5A25316F23333A0400812976 /* Codec_FreeImage.1.12.1.dylib in Frameworks */,
 				5A25317023333A0400812976 /* Plugin_OctreeSceneManager.1.12.1.dylib in Frameworks */,
 				5A25317123333A0400812976 /* Plugin_PCZSceneManager.1.12.1.dylib in Frameworks */,
@@ -206,6 +213,7 @@
 		5AE720722332F954004D9651 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A02FC772333498D00830888 /* plugins.cfg */,
 				5A5CDF75233300E600EDE963 /* Media */,
 				5A5CDF74233300E600EDE963 /* resources.cfg */,
 				5AE7207A2332F955004D9651 /* Info.plist */,
@@ -217,6 +225,7 @@
 		5AE720812332FA4A004D9651 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A02FC742333490000830888 /* libfreeimage-3.18.0.dylib */,
 				5A25316623333A0300812976 /* Codec_FreeImage.1.12.1.dylib */,
 				5A25316A23333A0300812976 /* Codec_STBI.1.12.1.dylib */,
 				5A25316E23333A0400812976 /* Plugin_BSPSceneManager.1.12.1.dylib */,
@@ -320,6 +329,7 @@
 				5A5CDF9423330C7D00EDE963 /* xcode_ogre_app_template2.entitlements in Resources */,
 				5A5CDF76233300E600EDE963 /* resources.cfg in Resources */,
 				5A5CDF77233300E600EDE963 /* Media in Resources */,
+				5A02FC782333498D00830888 /* plugins.cfg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +532,7 @@
 				);
 				OGRE3D_DEPENDENCY_PATH = ../Dependencies;
 				OGRE3D_SDK_PATH = ../ogre_sdk_1_12_1;
-				OTHER_LDFLAGS = "${OGRE3D_DEPENDENCY_PATH}/lib/libfreeimage.a";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kongjastudio.xcode-ogre-app-template2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -552,7 +562,7 @@
 				);
 				OGRE3D_DEPENDENCY_PATH = ../Dependencies;
 				OGRE3D_SDK_PATH = ../ogre_sdk_1_12_1;
-				OTHER_LDFLAGS = "${OGRE3D_DEPENDENCY_PATH}/lib/libfreeimage.a";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kongjastudio.xcode-ogre-app-template2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
