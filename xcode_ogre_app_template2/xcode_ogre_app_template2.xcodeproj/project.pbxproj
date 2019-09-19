@@ -61,11 +61,11 @@
 		5A5CDF76233300E600EDE963 /* resources.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CDF74233300E600EDE963 /* resources.cfg */; };
 		5A5CDF77233300E600EDE963 /* Media in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CDF75233300E600EDE963 /* Media */; };
 		5A5CDF9423330C7D00EDE963 /* xcode_ogre_app_template2.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 5A5CDF9323330C7D00EDE963 /* xcode_ogre_app_template2.entitlements */; };
-		5A5CDFA02333182B00EDE963 /* Bootstrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CDF9E2333182B00EDE963 /* Bootstrap.cpp */; };
 		5AE720832332FA4A004D9651 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720822332FA4A004D9651 /* Cocoa.framework */; };
 		5AE720852332FA50004D9651 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720842332FA50004D9651 /* IOKit.framework */; };
 		5AE720872332FA63004D9651 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720862332FA63004D9651 /* OpenGL.framework */; };
 		5AE720892332FA6B004D9651 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE720882332FA6B004D9651 /* AGL.framework */; };
+		5AEADDF323334DCB003CF32A /* Bootstrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AEADDF223334DCB003CF32A /* Bootstrap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,13 +135,13 @@
 		5A5CDF74233300E600EDE963 /* resources.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = resources.cfg; sourceTree = "<group>"; };
 		5A5CDF75233300E600EDE963 /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Media; sourceTree = "<group>"; };
 		5A5CDF9323330C7D00EDE963 /* xcode_ogre_app_template2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xcode_ogre_app_template2.entitlements; sourceTree = "<group>"; };
-		5A5CDF9E2333182B00EDE963 /* Bootstrap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bootstrap.cpp; sourceTree = "<group>"; };
 		5AE720702332F954004D9651 /* xcode_ogre_app_template2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcode_ogre_app_template2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE7207A2332F955004D9651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AE720822332FA4A004D9651 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5AE720842332FA50004D9651 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		5AE720862332FA63004D9651 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		5AE720882332FA6B004D9651 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = System/Library/Frameworks/AGL.framework; sourceTree = SDKROOT; };
+		5AEADDF223334DCB003CF32A /* Bootstrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bootstrap.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +187,7 @@
 		5A5CDF6E2332FD2900EDE963 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				5A5CDF9E2333182B00EDE963 /* Bootstrap.cpp */,
+				5AEADDF223334DCB003CF32A /* Bootstrap.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5CDFA02333182B00EDE963 /* Bootstrap.cpp in Sources */,
+				5AEADDF323334DCB003CF32A /* Bootstrap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
